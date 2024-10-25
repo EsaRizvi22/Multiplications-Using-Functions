@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Using Function Project</title>
+</head>
+
+<body>
+    <h2>Multiplication Using Function Project </h2>
+
+    <div id="output"></div>
+
+    <script>
+        // Multiplication function
+        function multiply(num1, num2) {
+            return num2 === undefined ? num1 : num1 * num2;
+        }
+
+        // Random numbers for testing
+        const num1 = Math.floor(Math.random() * 10) + 1;
+        const num2 = Math.floor(Math.random() * 10) + 1;
+
+        // Display results
+        document.getElementById("output").innerHTML = `
+            <p>Multiplying ${num1} by ${num2}: ${multiply(num1, num2)}</p>
+            <p>Multiplying only ${num1}: ${multiply(num1)}</p>
+        `;
+    </script>
+</body>
+
+</html>
